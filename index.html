@@ -94,7 +94,6 @@
     <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
     <div class="mobile-menu__socials">
       <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
-      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
       <a href="https://wa.me/393452689712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
     </div>
   </div>
@@ -103,7 +102,13 @@
 <main>
 
 <!-- ========== HERO ========== -->
-<section class="hero" data-screen-label="Hero">
+<section class="hero" data-screen-label="Hero" data-hero-slider>
+  <div class="hero__slides" aria-hidden="true">
+    <div class="hero__slide is-active" style="background-image:url('img/hero/slide-1.png')"></div>
+    <div class="hero__slide" style="background-image:url('img/hero/slide-2.png')"></div>
+    <div class="hero__slide" style="background-image:url('img/hero/slide-3.png')"></div>
+    <div class="hero__slide" style="background-image:url('img/hero/slide-4.png')"></div>
+  </div>
   <div class="hero__inner">
     <div class="hero__copy">
       <p class="eyebrow">Lenta·mente, secondo tradizione</p>
@@ -119,7 +124,7 @@
       </div>
       <p class="lead hero__lead">
         Dal 2002 custodiamo l'arte salumiera di Bocchigliero, nel cuore
-        della Sila Greca. Materie prime selezionate, gesti antichi e il
+        della Sila. Materie prime selezionate, gesti antichi e il
         microclima unico delle nostre montagne, calabresi fino in fondo.
       </p>
       <div class="hero__ctas">
@@ -129,6 +134,33 @@
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
       </div>
+    </div>
+  </div>
+
+  <button type="button" class="hero__nav hero__nav--prev" aria-label="Foto precedente">
+    <span class="hero__nav-mark" aria-hidden="true">
+      <svg viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+    </span>
+    <span class="hero__nav-arrow" aria-hidden="true">
+      <svg viewBox="0 0 28 12" fill="none"><path d="M28 6H2m0 0l5-5M2 6l5 5" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </button>
+  <button type="button" class="hero__nav hero__nav--next" aria-label="Foto successiva">
+    <span class="hero__nav-arrow" aria-hidden="true">
+      <svg viewBox="0 0 28 12" fill="none"><path d="M0 6h26m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+    <span class="hero__nav-mark" aria-hidden="true">
+      <svg viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+    </span>
+  </button>
+
+  <div class="hero__pager">
+    <p class="hero__counter" aria-live="polite"><span data-hero-current>01</span><span class="hero__counter-sep">/</span><span>04</span></p>
+    <div class="hero__dots" role="tablist" aria-label="Foto hero">
+      <button type="button" class="hero__dot is-active" aria-label="Foto 1" aria-selected="true"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 2" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 3" aria-selected="false"></button>
+      <button type="button" class="hero__dot" aria-label="Foto 4" aria-selected="false"></button>
     </div>
   </div>
 
@@ -203,29 +235,6 @@
             Solo carni italiane di suini accuratamente selezionati,
             filiera controllata, niente compromessi.
           </p>
-          <p class="pillar__tag">✓ Filiera controllata</p>
-        </div>
-      </div>
-
-      <div class="pillar">
-        <div class="pillar__icon">
-          <!-- salt cone -->
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
-            <path d="M24 8 L 36 38 L 12 38 Z"/>
-            <line x1="18" y1="26" x2="30" y2="26"/>
-            <circle cx="20" cy="32" r="0.8" fill="currentColor"/>
-            <circle cx="24" cy="34" r="0.8" fill="currentColor"/>
-            <circle cx="28" cy="32" r="0.8" fill="currentColor"/>
-          </svg>
-        </div>
-        <div>
-          <p class="pillar__num">2.</p>
-          <h3 class="pillar__title">Salatura</h3>
-          <p class="pillar__text">
-            Salatura a mano con sale marino. Un gesto antico,
-            ricette di famiglia tramandate dal 2002.
-          </p>
-          <p class="pillar__tag">✓ Ricette di famiglia</p>
         </div>
       </div>
 
@@ -242,13 +251,12 @@
           </svg>
         </div>
         <div>
-          <p class="pillar__num">3.</p>
+          <p class="pillar__num">2.</p>
           <h3 class="pillar__title">Stagionatura</h3>
           <p class="pillar__text">
             Il microclima della Sila — aria di mare e di montagna —
             trasforma ogni pezzo in eccellenza naturale.
           </p>
-          <p class="pillar__tag">✓ Tempo, aria, silenzio</p>
         </div>
       </div>
 
@@ -256,7 +264,7 @@
       <div class="territory">
         <p class="eyebrow eyebrow--gold">Orgoglio di Bocchigliero</p>
         <p class="territory__text">
-          Nel cuore della <em>Sila Greca</em>, dove l'incontro tra
+          Nel cuore della <em>Sila</em>, dove l'incontro tra
           aria marina e montana dà vita a una stagionatura naturale
           unica.
         </p>
@@ -273,7 +281,7 @@
               <circle cx="118" cy="76" r="3.5" fill="var(--wine)"/>
               <circle cx="118" cy="76" r="6" fill="none" stroke="var(--wine)" stroke-width="0.6"/>
               <text x="124" y="74" font-family="Jost" font-size="9" letter-spacing="2" fill="var(--gold-soft)" font-weight="500">BOCCHIGLIERO</text>
-              <text x="124" y="84" font-family="Jost" font-size="7.5" letter-spacing="2" fill="rgba(201,163,102,0.7)">SILA GRECA</text>
+              <text x="124" y="84" font-family="Jost" font-size="7.5" letter-spacing="2" fill="rgba(201,163,102,0.7)">SILA</text>
             </g>
             <g>
               <circle cx="92" cy="118" r="1.8" fill="var(--gold-soft)"/>
@@ -302,140 +310,12 @@
   </div>
 </section>
 
-<!-- ========== VALUES STRIP (light, sepia engravings) ========== -->
-<section class="strip">
-  <div class="strip__inner">
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <circle cx="24" cy="24" r="16"/>
-        <circle cx="24" cy="24" r="11"/>
-        <text x="24" y="22" text-anchor="middle" font-family="Cormorant Garamond" font-size="9" font-weight="600" fill="currentColor" stroke="none">+25</text>
-        <text x="24" y="30" text-anchor="middle" font-family="Jost" font-size="4.5" letter-spacing="1" fill="currentColor" stroke="none">ANNI</text>
-      </svg>
-      <p>Oltre 25 anni<br/>di tradizione</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M16 14 Q 24 4, 32 14 Q 36 22, 30 30 Q 24 38, 18 30 Q 12 22, 16 14 Z"/>
-        <path d="M24 12 V 30" />
-        <path d="M 20 18 Q 24 22, 28 18" />
-      </svg>
-      <p>Senza glutine<br/>e senza lattosio</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M24 8 C 14 16, 12 28, 24 40 C 36 28, 34 16, 24 8 Z"/>
-        <path d="M24 14 V 36"/>
-        <path d="M24 20 L 19 23"/>
-        <path d="M24 26 L 30 22"/>
-        <path d="M24 32 L 19 29"/>
-      </svg>
-      <p>Senza coloranti<br/>né conservanti</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M8 36 L 24 14 L 40 36 Z"/>
-        <path d="M14 36 V 30 H 20 V 36"/>
-        <path d="M28 30 H 34 V 36"/>
-        <line x1="24" y1="14" x2="24" y2="10"/>
-      </svg>
-      <p>Stagionatura naturale<br/>nelle cantine di Sila</p>
-    </div>
-  </div>
-</section>
-
-<!-- ========== STORIA PREVIEW ========== -->
-<section class="storia-preview" data-screen-label="Storia preview">
-  <div class="storia-preview__inner">
-    <div class="storia-preview__art">
-      <image-slot id="storia-preview" shape="rect" src="img/prodotti/norcinaro.png" placeholder="Lino Parrilla in laboratorio · gesto artigiano"></image-slot>
-      <div class="storia-preview__caption">
-        <p class="eyebrow eyebrow--mute">Lino Parrilla</p>
-        <p class="eyebrow eyebrow--mute" style="color:var(--ink-faint)">Fondatore</p>
-      </div>
-    </div>
-    <div class="storia-preview__copy">
-      <p class="eyebrow">La nostra storia</p>
-      <h2>
-        Un sapere che<br/>
-        attraversa il <em>tempo.</em>
-      </h2>
-      <p class="lead">
-        Tutto ebbe inizio dal sogno di Lino Parrilla, profondamente
-        legato a Bocchigliero e alla tradizione norcina della Sila Greca.
-        Nel 2002 nasce <em>Getra</em> — <em>Ge</em>nuinità e <em>Tra</em>dizione —
-        due valori che guidano ogni nostro gesto.
-      </p>
-      <blockquote class="quote">
-        <p>"Il tempo non si ferma.<br/>Noi impariamo ad aspettarlo."</p>
-        <p class="quote__sig script">Lino Parrilla</p>
-        <p class="quote__role">— Fondatore —</p>
-      </blockquote>
-
-      <div class="storia-stats">
-        <div class="stat">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
-            <circle cx="10" cy="12" r="3.5"/><circle cx="22" cy="12" r="3.5"/><circle cx="16" cy="20" r="3.5"/>
-            <path d="M5 26 c 1 -3, 4 -4, 5 -4 M22 22 c 1 0, 4 1, 5 4 M11 28 c 1 -2, 9 -2, 10 0"/>
-          </svg>
-          <p class="stat__num">2</p>
-          <p class="stat__label">Generazioni</p>
-          <p class="stat__cap">La famiglia Parrilla,<br/>oggi e domani.</p>
-        </div>
-        <div class="stat">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
-            <path d="M4 24 L 10 14 L 14 18 L 20 10 L 24 16 L 28 24 Z"/>
-            <rect x="14.5" y="6" width="1.2" height="6"/>
-            <polygon points="13.8,6 15.1,3 16.4,6"/>
-          </svg>
-          <p class="stat__num script">Sila</p>
-          <p class="stat__label">Il nostro territorio</p>
-          <p class="stat__cap">Dove l'aria di mare<br/>incontra la montagna.</p>
-        </div>
-        <div class="stat">
-          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.1">
-            <circle cx="16" cy="16" r="11"/>
-            <path d="M16 9 V 16 L 21 19"/>
-          </svg>
-          <p class="stat__num">90<span style="font-size:0.5em; vertical-align: super;">+</span></p>
-          <p class="stat__label">Giorni di stagionatura</p>
-          <p class="stat__cap">Il tempo necessario<br/>per profondità e aroma.</p>
-        </div>
-      </div>
-
-      <a href="/chi-siamo" class="link-arrow" style="margin-top: 32px;">
-        Scopri la nostra storia
-        <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <!-- side botanical -->
-  <svg class="botanical" style="top: 80px; left: 0; width: 180px;" viewBox="0 0 180 320" fill="none">
-    <g stroke="var(--sepia)" stroke-width="0.6">
-      <path d="M 30 10 Q 60 80, 50 160 Q 40 240, 70 310"/>
-      <g fill="var(--sepia)" stroke="none" opacity="0.6">
-        <ellipse cx="46" cy="60" rx="14" ry="5" transform="rotate(35 46 60)"/>
-        <ellipse cx="58" cy="100" rx="14" ry="5" transform="rotate(-15 58 100)"/>
-        <ellipse cx="42" cy="140" rx="14" ry="5" transform="rotate(40 42 140)"/>
-        <ellipse cx="56" cy="180" rx="14" ry="5" transform="rotate(-20 56 180)"/>
-        <ellipse cx="44" cy="220" rx="14" ry="5" transform="rotate(35 44 220)"/>
-        <ellipse cx="60" cy="260" rx="14" ry="5" transform="rotate(-10 60 260)"/>
-      </g>
-    </g>
-  </svg>
-</section>
-
 <!-- ========== I SALUMI PREVIEW ========== -->
 <section class="salumi-preview" data-screen-label="Salumi preview">
   <div class="salumi-preview__inner">
     <div class="section-head">
       <p class="eyebrow">La nostra selezione</p>
       <h2>I salumi</h2>
-      <p class="lead">
-        Ogni salume nasce da gesti antichi, materie prime eccellenti
-        e un tempo che non ha mai smesso di fare la differenza.
-      </p>
       <div class="diamond-divider" style="width: 100%; max-width: 240px; margin-top: 12px;">
         <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
       </div>
@@ -444,62 +324,34 @@
     <div class="salumi-grid">
       <article class="prod-card card--ornate">
         <div class="prod-card__head">
-          <p class="prod-card__kicker">Il decano</p>
-          <span class="seal seal--dop" aria-label="Tipico calabrese">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
-          </span>
+          <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">Capocollo<br/>di Bocchigliero</h3>
         <image-slot id="prod-capocollo" shape="rect" src="img/prodotti/capocollo.png" placeholder="Capocollo intero e affettato"></image-slot>
-        <div class="prod-card__foot">
-          <p class="prod-card__meta">Stagionatura 90+ giorni</p>
-          <p class="prod-card__var">Pepe nero · Pepe rosso</p>
-        </div>
       </article>
 
       <article class="prod-card card--ornate">
         <div class="prod-card__head">
-          <p class="prod-card__kicker">Il simbolo</p>
-          <span class="seal seal--dop">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
-          </span>
+          <p class="prod-card__place">Bocchigliero</p>
         </div>
-        <h3 class="prod-card__title">'Nduja<br/>Getra Sila</h3>
+        <h3 class="prod-card__title">'Nduja<br/>di Bocchigliero</h3>
         <image-slot id="prod-nduja" shape="rect" src="img/prodotti/nduja.png" placeholder="'Nduja morbida e spalmabile"></image-slot>
-        <div class="prod-card__foot">
-          <p class="prod-card__meta">Stagionatura tradizionale</p>
-          <p class="prod-card__var">Peperoncino calabrese</p>
-        </div>
       </article>
 
       <article class="prod-card card--ornate">
         <div class="prod-card__head">
-          <p class="prod-card__kicker">Il sapore di festa</p>
-          <span class="seal seal--region">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
-          </span>
+          <p class="prod-card__place">Bocchigliero</p>
         </div>
         <h3 class="prod-card__title">Soppressata<br/>casereccia</h3>
         <image-slot id="prod-soppressata" shape="rect" src="img/prodotti/sopressata-caserecca.png" placeholder="Soppressata pressata, ricetta di famiglia"></image-slot>
-        <div class="prod-card__foot">
-          <p class="prod-card__meta">Stagionatura 45–50 giorni</p>
-          <p class="prod-card__var">Dolce · Piccante · Bombata</p>
-        </div>
       </article>
 
       <article class="prod-card card--ornate">
         <div class="prod-card__head">
-          <p class="prod-card__kicker">La festa contadina</p>
-          <span class="seal seal--region">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
-          </span>
+          <p class="prod-card__place">Bocchigliero</p>
         </div>
-        <h3 class="prod-card__title">Salsiccia<br/>"a ferro di cavallo"</h3>
+        <h3 class="prod-card__title">Salsiccia<br/>di Bocchigliero</h3>
         <image-slot id="prod-salsiccia" shape="rect" src="img/prodotti/salsicce-cavallo.png" placeholder="Salsiccia legata a mano"></image-slot>
-        <div class="prod-card__foot">
-          <p class="prod-card__meta">Budello naturale</p>
-          <p class="prod-card__var">Dolce · Piccante</p>
-        </div>
       </article>
     </div>
 
@@ -538,7 +390,7 @@
       <div class="ed-card__copy">
         <p class="eyebrow">Storie di tradizione</p>
         <h3>Persone, gesti<br/>e tradizione.</h3>
-        <p>Incontra chi ogni giorno custodisce l'arte salumiera nel cuore della Sila Greca.</p>
+        <p>Incontra chi ogni giorno custodisce l'arte salumiera nel cuore della Sila.</p>
         <a href="/chi-siamo" class="link-arrow">Leggi di più
           <svg viewBox="0 0 24 12" fill="none"><path d="M0 6h22m0 0L17 1m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
@@ -587,18 +439,17 @@
   </svg>
 
   <div class="cta-band__inner">
-    <p class="eyebrow eyebrow--gold">Vieni a trovarci</p>
+    <p class="eyebrow eyebrow--gold">Acquista i nostri prodotti</p>
     <h2>
       Respira la tradizione.<br/>
       <em>Porta a casa la Sila.</em>
     </h2>
     <p class="cta-band__lead">
-      Ti aspettiamo a Bocchigliero, nel cuore della Sila Greca,
-      oppure scrivici per ordinare i nostri salumi e farli arrivare
+      Scrivici per ordinare i nostri salumi e farli arrivare
       direttamente a casa tua.
     </p>
     <div class="cta-band__ctas">
-      <a href="/contatti" class="btn btn--cream">Vieni a trovarci</a>
+      <a href="/contatti" class="btn btn--cream">Acquista i nostri prodotti</a>
       <a href="/prodotti" class="btn">Scopri i salumi</a>
     </div>
   </div>
@@ -618,9 +469,8 @@
       <h4>Contatti</h4>
       <p>Via Russi, 26</p>
       <p>87060 Bocchigliero (CS)<br/>Calabria — Italia</p>
-      <p style="margin-top: 12px;"><a href="tel:+390983996800">0983 996800</a></p>
-      <p><a href="tel:+393339092463">333 909 2463</a></p>
-      <p><a href="tel:+393452689712">345 268 9712</a></p>
+      <p style="margin-top: 12px;"><a href="tel:+390983996800">Tel. 0983 996800</a></p>
+      <p>P. IVA 01610610782</p>
       <p>info@getrasila.it</p>
     </div>
     <div class="footer-col">
@@ -637,7 +487,7 @@
       <ul>
         <li><a href="/chi-siamo">La storia</a></li>
         <li><a href="/prodotti">I salumi</a></li>
-        <li><a href="/contatti">Vieni a trovarci</a></li>
+        <li><a href="/contatti">Acquista i nostri prodotti</a></li>
         <li><a href="/contatti">Domande frequenti</a></li>
       </ul>
     </div>
@@ -652,7 +502,6 @@
       </form>
       <div class="socials">
         <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
         <a href="https://wa.me/393452689712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
       </div>
     </div>
@@ -699,10 +548,25 @@
   .hero {
     position: relative;
     min-height: calc(100vh - var(--topbar-h));
-    background: url('img/prodotti/hero.png') center right / cover no-repeat;
     overflow: hidden;
     padding-bottom: 110px;
+    background: #1c1108;
   }
+  .hero__slides {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .hero__slide {
+    position: absolute;
+    inset: 0;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.1s ease;
+  }
+  .hero__slide.is-active { opacity: 1; }
   .hero::before {
     content: "";
     position: absolute;
@@ -747,9 +611,108 @@
   .hero .link-arrow:hover { color: #fff; border-color: #fff; }
   .hero__ctas { display: flex; gap: 28px; align-items: center; margin-top: 36px; flex-wrap: wrap; }
 
+  .hero__nav {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    margin: 0;
+    border: 1px solid rgba(244, 210, 124, 0.38);
+    background: rgba(18, 10, 6, 0.42);
+    color: #f4d27c;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: border-color 0.25s ease, background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+  .hero__nav--prev { left: clamp(12px, 2.4vw, 36px); }
+  .hero__nav--next { right: clamp(12px, 2.4vw, 36px); }
+  .hero__nav-mark {
+    display: grid;
+    place-items: center;
+    width: 14px;
+    height: 14px;
+    opacity: 0.7;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .hero__nav-mark svg { width: 14px; height: 14px; display: block; }
+  .hero__nav-arrow {
+    display: block;
+    width: 28px;
+    height: 12px;
+    transition: transform 0.28s ease;
+  }
+  .hero__nav-arrow svg { width: 100%; height: 100%; display: block; }
+  .hero__nav:hover,
+  .hero__nav:focus-visible {
+    border-color: rgba(244, 210, 124, 0.85);
+    background: rgba(18, 10, 6, 0.62);
+    color: #f8e2a4;
+    outline: none;
+  }
+  .hero__nav--prev:hover .hero__nav-arrow,
+  .hero__nav--prev:focus-visible .hero__nav-arrow { transform: translateX(-4px); }
+  .hero__nav--next:hover .hero__nav-arrow,
+  .hero__nav--next:focus-visible .hero__nav-arrow { transform: translateX(4px); }
+  .hero__nav:hover .hero__nav-mark,
+  .hero__nav:focus-visible .hero__nav-mark { opacity: 1; }
+
+  .hero__pager {
+    position: absolute;
+    bottom: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero__counter {
+    margin: 0;
+    font-family: var(--ff-label);
+    font-size: 11px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: rgba(244, 210, 124, 0.88);
+  }
+  .hero__counter-sep {
+    margin: 0 0.35em;
+    opacity: 0.45;
+    letter-spacing: 0;
+  }
+  .hero__dots {
+    display: flex;
+    gap: 10px;
+  }
+  .hero__dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 1px solid rgba(244, 210, 124, 0.75);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  }
+  .hero__dot.is-active {
+    background: #f4d27c;
+    border-color: #f4d27c;
+    transform: scale(1.15);
+  }
+  .hero__dot:hover,
+  .hero__dot:focus-visible {
+    border-color: #f8e2a4;
+    outline: none;
+  }
+
   .hero__scroll {
     position: absolute;
-    bottom: 22px; left: 50%; transform: translateX(-50%);
+    bottom: 16px; left: 50%; transform: translateX(-50%);
     z-index: 4;
     color: #f4d27c;
   }
@@ -774,7 +737,7 @@
   .method__head { margin-bottom: 48px; }
   .method__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 1.4fr;
+    grid-template-columns: 1fr 1fr 1.4fr;
     gap: 40px;
   }
   .pillar {
@@ -807,14 +770,6 @@
     font-size: 14px;
     color: #d6c39e;
     line-height: 1.6;
-    margin: 0 0 16px;
-  }
-  .pillar__tag {
-    font-family: var(--ff-label);
-    font-size: 11px;
-    color: #c9a366;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
     margin: 0;
   }
   .territory {
@@ -837,128 +792,6 @@
     text-transform: uppercase;
     color: #c9a366;
     margin: 0;
-  }
-
-  /* ===== Strip ===== */
-  .strip {
-    background: var(--bg-cream);
-    padding: 36px var(--gutter);
-    border-top: 1px solid var(--sepia-line);
-    border-bottom: 1px solid var(--sepia-line);
-  }
-  .strip__inner {
-    max-width: var(--maxw); margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 36px;
-  }
-  .strip__item {
-    display: flex; align-items: center; gap: 18px;
-    color: var(--ink-soft);
-  }
-  .strip__item svg { width: 48px; height: 48px; color: var(--sepia); flex: 0 0 48px; }
-  .strip__item p {
-    margin: 0;
-    font-family: var(--ff-label);
-    font-size: 12px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    line-height: 1.5;
-  }
-
-  /* ===== Storia preview ===== */
-  .storia-preview {
-    padding: clamp(80px, 9vw, 140px) var(--gutter);
-    background: var(--bg-cream);
-    position: relative;
-    overflow: hidden;
-  }
-  .storia-preview__inner {
-    max-width: var(--maxw); margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.05fr;
-    gap: clamp(40px, 5vw, 96px);
-    align-items: center;
-    position: relative;
-    z-index: 2;
-  }
-  .storia-preview__art {
-    position: relative;
-    height: 640px;
-    background: #1c1108;
-  }
-  .storia-preview__art image-slot { width: 100%; height: 100%; }
-  .storia-preview__caption {
-    position: absolute;
-    bottom: 24px; left: 24px;
-    color: #ead7af;
-    background: rgba(20, 12, 6, 0.75);
-    padding: 14px 18px;
-    border-left: 2px solid var(--gold-soft);
-  }
-  .storia-preview__caption .eyebrow { color: #d6b87a; }
-  .storia-preview__copy h2 { margin: 16px 0 24px; }
-  .storia-preview__copy h2 em { color: var(--wine); }
-  .quote {
-    margin: 36px 0 16px;
-    padding: 0;
-    border: 0;
-    color: var(--ink-soft);
-  }
-  .quote p:first-child {
-    font-family: var(--ff-display);
-    font-style: italic;
-    font-size: 22px;
-    line-height: 1.5;
-    margin: 0 0 12px;
-  }
-  .quote__sig {
-    font-size: 36px;
-    line-height: 1;
-    margin: 18px 0 4px;
-    color: var(--ink);
-  }
-  .quote__role {
-    font-family: var(--ff-label);
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin: 0;
-  }
-
-  .storia-stats {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    border-top: 1px solid var(--sepia-line);
-    padding-top: 32px;
-  }
-  .stat { text-align: center; }
-  .stat svg { width: 32px; height: 32px; color: var(--sepia); margin-bottom: 8px; }
-  .stat__num {
-    font-family: var(--ff-display);
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1;
-    margin: 0 0 6px;
-    color: var(--ink);
-  }
-  .stat__num.script { font-size: 56px; line-height: 0.9; color: var(--wine); }
-  .stat__label {
-    font-family: var(--ff-label);
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin: 0 0 8px;
-  }
-  .stat__cap {
-    font-size: 13px;
-    color: var(--ink-mute);
-    margin: 0;
-    line-height: 1.45;
   }
 
   /* ===== Salumi preview ===== */
@@ -984,11 +817,13 @@
   }
   .prod-card.card--ornate::before { --bk-len: 18px; inset: 8px; }
   .prod-card__head {
-    display: flex; justify-content: space-between; align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
     border-bottom: 1px solid var(--sepia-line);
     padding-bottom: 12px;
   }
-  .prod-card__kicker {
+  .prod-card__place {
     font-family: var(--ff-label);
     font-size: 10px;
     letter-spacing: 0.26em;
@@ -996,8 +831,6 @@
     color: var(--wine);
     margin: 0;
   }
-  .seal { display: inline-block; width: 38px; height: 38px; flex-shrink: 0; }
-  .seal svg { width: 100%; height: 100%; }
   .prod-card__title {
     font-family: var(--ff-display);
     font-weight: 500;
@@ -1011,26 +844,6 @@
     background: transparent;
     --slot-bg: var(--bg-cream-soft);
     --slot-fg: var(--ink-faint);
-  }
-  .prod-card__foot {
-    border-top: 1px solid var(--sepia-line);
-    padding-top: 12px;
-    display: flex; flex-direction: column; gap: 4px;
-  }
-  .prod-card__meta {
-    font-family: var(--ff-label);
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin: 0;
-  }
-  .prod-card__var {
-    font-family: var(--ff-display);
-    font-style: italic;
-    font-size: 14px;
-    color: var(--wine);
-    margin: 0;
   }
 
   /* ===== Editorial ===== */
@@ -1097,8 +910,8 @@
     .hero {
       min-height: auto;
       padding-bottom: 72px;
-      background-position: 72% center;
     }
+    .hero__slide { background-position: 72% center; }
     .hero::before {
       background: linear-gradient(
         to right,
@@ -1124,13 +937,6 @@
     .method__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     .territory { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid rgba(201,163,102,0.3); padding-top: 28px; }
 
-    .storia-preview { padding: clamp(56px, 8vw, 80px) var(--gutter); }
-    .storia-preview__inner { grid-template-columns: 1fr; gap: 32px; }
-    .storia-preview__art { height: min(400px, 55vh); }
-    .storia-stats { grid-template-columns: 1fr; gap: 28px; }
-    .stat__num { font-size: 40px; }
-    .stat__num.script { font-size: 44px; }
-
     .salumi-preview { padding: clamp(56px, 8vw, 80px) var(--gutter); }
     .salumi-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
 
@@ -1139,15 +945,10 @@
     .ed-card { grid-template-columns: 1fr; min-height: auto; gap: 16px; padding: 22px; }
     .ed-card image-slot { min-height: 220px; }
     .ed-card__copy h3 { font-size: clamp(22px, 5vw, 26px); }
-
-    .quote p:first-child { font-size: clamp(18px, 4.5vw, 22px); }
-    .quote__sig { font-size: clamp(28px, 7vw, 36px); }
   }
 
   @media (max-width: 600px) {
-    .hero {
-      background-position: 68% center;
-    }
+    .hero__slide { background-position: 68% center; }
     .hero::before {
       background: linear-gradient(
         to bottom,
@@ -1156,15 +957,33 @@
         rgba(0, 0, 0, 0.35) 100%
       );
     }
-    .hero__inner { padding-top: 24px; padding-bottom: 40px; }
+    .hero__inner { padding-top: 24px; padding-bottom: 88px; }
     .hero__lead { font-size: 15px; }
     .hero__scroll { display: none; }
+    .hero__pager {
+      bottom: 18px;
+      left: 50%;
+      right: auto;
+      width: auto;
+      flex-direction: row;
+      gap: 14px;
+    }
+    .hero__nav {
+      top: auto;
+      bottom: 14px;
+      transform: none;
+      padding: 11px 13px;
+      gap: 0;
+    }
+    .hero__nav--prev { left: var(--gutter); }
+    .hero__nav--next { right: var(--gutter); }
+    .hero__nav-mark { display: none; }
+    .hero__nav-arrow { width: 22px; }
+    .hero__counter { letter-spacing: 0.28em; }
 
     .method__grid { grid-template-columns: 1fr; gap: 28px; }
     .pillar { flex-direction: row; gap: 14px; }
 
-    .storia-preview__art { height: min(320px, 50vh); }
-    .storia-preview__caption { left: 16px; bottom: 16px; padding: 12px 14px; }
     .salumi-grid { grid-template-columns: 1fr; }
     .prod-card { padding: 20px 18px 16px; }
     .prod-card image-slot { min-height: 220px; }
@@ -1174,6 +993,78 @@
     .ed-card image-slot { min-height: 200px; }
   }
 </style>
+
+<script>
+  (function () {
+    var root = document.querySelector("[data-hero-slider]");
+    if (!root) return;
+    var slides = Array.prototype.slice.call(root.querySelectorAll(".hero__slide"));
+    var dots = Array.prototype.slice.call(root.querySelectorAll(".hero__dot"));
+    var prev = root.querySelector(".hero__nav--prev");
+    var next = root.querySelector(".hero__nav--next");
+    var current = root.querySelector("[data-hero-current]");
+    if (!slides.length) return;
+    var index = 0;
+    var timer;
+    var total = slides.length;
+
+    function pad(n) {
+      return n < 10 ? "0" + n : String(n);
+    }
+
+    function goTo(nextIndex) {
+      index = (nextIndex + total) % total;
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle("is-active", i === index);
+      });
+      dots.forEach(function (dot, i) {
+        var active = i === index;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      if (current) current.textContent = pad(index + 1);
+    }
+
+    function start() {
+      clearInterval(timer);
+      timer = setInterval(function () { goTo(index + 1); }, 5500);
+    }
+
+    function pause() { clearInterval(timer); }
+
+    function step(delta) {
+      goTo(index + delta);
+      start();
+    }
+
+    if (prev) prev.addEventListener("click", function () { step(-1); });
+    if (next) next.addEventListener("click", function () { step(1); });
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () {
+        goTo(i);
+        start();
+      });
+    });
+
+    root.addEventListener("mouseenter", pause);
+    root.addEventListener("mouseleave", start);
+    root.addEventListener("focusin", pause);
+    root.addEventListener("focusout", function (e) {
+      if (!root.contains(e.relatedTarget)) start();
+    });
+
+    document.addEventListener("keydown", function (e) {
+      var tag = (e.target && e.target.tagName) || "";
+      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || (e.target && e.target.isContentEditable)) return;
+      if (e.key === "ArrowLeft") step(-1);
+      if (e.key === "ArrowRight") step(1);
+    });
+
+    goTo(0);
+    start();
+  })();
+</script>
 
 </body>
 </html>
