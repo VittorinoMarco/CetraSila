@@ -48,13 +48,13 @@
   /* Layout */
   --maxw: 1440px;
   --gutter: clamp(20px, 3vw, 56px);
-  --topbar-h: 92px;
+  --topbar-h: 108px;
 }
 
 /* ========== Reset / base ========== */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; overflow-x: hidden; scroll-padding-top: calc(var(--topbar-h) + 16px); }
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
@@ -194,7 +194,7 @@ em, .italic { font-style: italic; }
 
 .brand { display: inline-flex; align-items: center; }
 .brand img,
-.brand svg { height: 72px; width: auto; display: block; }
+.brand svg { height: 96px; width: auto; display: block; }
 .topbar--dark .brand .b-fill { fill: #ead7af; }
 .topbar--dark .brand .b-stroke { stroke: #ead7af; }
 
@@ -333,12 +333,12 @@ em, .italic { font-style: italic; }
 .site-footer .footer-grid {
   max-width: var(--maxw); margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 0.9fr;
   gap: 56px;
   align-items: flex-start;
 }
 .site-footer .brand img,
-.site-footer .brand svg { height: 86px; }
+.site-footer .brand svg { height: 110px; }
 .site-footer .brand .b-fill { fill: #ead7af; }
 .site-footer .brand .b-stroke { stroke: #ead7af; }
 
@@ -640,7 +640,7 @@ body.menu-open .burger { display: none; }
     --gutter: 20px;
   }
   .brand img,
-  .brand svg { height: 56px; }
+  .brand svg { height: 70px; }
   .strip__inner { grid-template-columns: 1fr 1fr; gap: 22px; }
   .strip__item p { font-size: 11px; letter-spacing: 0.18em; }
   .strip__item svg { width: 40px; height: 40px; flex: 0 0 40px; }
@@ -660,8 +660,8 @@ body.menu-open .burger { display: none; }
 @media (max-width: 420px) {
   .strip__inner { grid-template-columns: 1fr; }
   .brand img,
-  .brand svg { height: 48px; }
+  .brand svg { height: 58px; }
   .burger { padding: 8px; }
   .site-footer .brand img,
-  .site-footer .brand svg { height: 64px; }
+  .site-footer .brand svg { height: 78px; }
 }

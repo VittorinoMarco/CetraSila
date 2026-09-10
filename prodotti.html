@@ -54,7 +54,6 @@
     <p class="mobile-menu__addr">Bocchigliero (CS)<br/>Calabria — Italia</p>
     <div class="mobile-menu__socials">
       <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
-      <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
       <a href="https://wa.me/393452689712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
     </div>
   </div>
@@ -64,31 +63,6 @@
 
 <!-- ========== HEADER ========== -->
 <section class="pr-head">
-  <!-- corner stamp -->
-  <div class="corner-stamp" style="top: 40px; left: 40px; width: 130px; height: 130px;">
-    <svg viewBox="0 0 120 120">
-      <g fill="none" stroke="var(--sepia)" stroke-width="0.6" opacity="0.5">
-        <circle cx="60" cy="60" r="54"/>
-        <circle cx="60" cy="60" r="50"/>
-        <defs>
-          <path id="phs-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
-          <path id="phs-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
-        </defs>
-        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="var(--sepia)" stroke="none">
-          <textPath href="#phs-t" startOffset="50%" text-anchor="middle">SALUMIFICIO · GETRA SILA</textPath>
-        </text>
-        <text font-family="Cormorant Garamond" font-style="italic" font-size="8" fill="var(--sepia)" stroke="none">
-          <textPath href="#phs-b" startOffset="50%" text-anchor="middle">Genuinità · Tradizione</textPath>
-        </text>
-        <g fill="var(--sepia)" stroke="none">
-          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
-          <rect x="58.5" y="42" width="1.6" height="10"/>
-          <polygon points="57.5,42 59.3,38 61.1,42"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-
   <!-- right botanical -->
   <svg class="botanical" style="right: 0; top: 60px; width: 220px; height: 360px;" viewBox="0 0 220 360" fill="none">
     <g stroke="var(--sepia)" stroke-width="0.6" opacity="0.6">
@@ -113,12 +87,26 @@
         Ogni salume nasce da gesti antichi, materie prime eccellenti
         e un tempo che non ha mai smesso di fare la differenza.
         Tutti i nostri prodotti sono lavorati a mano nella sede
-        di Bocchigliero — niente glutine, niente lattosio, niente coloranti.
+        di Bocchigliero.
       </p>
       <div class="diamond-divider" style="width: 100%; max-width: 240px; margin-top: 12px;">
         <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 1l6 6-6 6-6-6z" stroke="currentColor" stroke-width="0.8" fill="none"/></svg>
       </div>
     </div>
+
+    <nav class="pr-jump" aria-label="Vai al prodotto">
+      <h2 class="pr-jump__title">I nostri prodotti in dettaglio</h2>
+      <div class="pr-jump__grid">
+        <a class="pr-jump__btn" href="#nduja">'Nduja di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#capocollo">Capocollo di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#soppressate">Soppressata di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#salsicce">Salsiccia di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#filetto">Filetto di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#pancetta">Pancetta tesa di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#salame">Salame Getra di Bocchigliero</a>
+        <a class="pr-jump__btn" href="#guanciale">Guanciale di Bocchigliero</a>
+      </div>
+    </nav>
   </div>
 </section>
 
@@ -126,44 +114,14 @@
 <section class="pr-grid">
   <div class="pr-grid__inner">
 
-    <!-- ===== I PROTAGONISTI (large feature row) ===== -->
-    <p class="pr-section-head"><span>Le specialità di Bocchigliero</span></p>
-
-    <div class="pr-feature-row">
-      <article class="pr-feature">
-        <div class="pr-feature__art">
-          <image-slot id="pr-nduja" shape="rect" src="img/prodotti/nduja.png" placeholder="'Nduja di Bocchigliero — morbida e spalmabile"></image-slot>
-          <span class="seal seal--lg">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#a4222e"/><circle cx="20" cy="20" r="14" fill="#f1c14a"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="6" font-weight="600" fill="#a4222e">SILA</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#a4222e">CALABRIA</text></svg>
-          </span>
-        </div>
-        <div class="pr-feature__copy">
-          <p class="pr-kicker">Il simbolo</p>
-          <h2>'Nduja<br/>di Bocchigliero</h2>
-          <p class="pr-desc">
-            Salume tipico della tradizione calabrese, dalla consistenza
-            morbida e spalmabile e dal gusto intenso. Nasce dall'unione
-            sapiente di pancettone, carni magre e grasso di suino,
-            arricchiti da sale e peperoncino piccante calabrese.
-          </p>
-          <ul class="pr-spec">
-            <li><span>Ingredienti</span><em>Pancettone · carni magre · peperoncino calabrese</em></li>
-            <li><span>Insacco</span><em>Budello naturale</em></li>
-            <li><span>Stagionatura</span><em>Tradizionale, con note affumicate</em></li>
-            <li><span>Codice</span><em>NDU</em></li>
-          </ul>
-          <p class="pr-use">
-            <em>Ideale</em> spalmata su pane caldo e bruschette, o per
-            arricchire primi e secondi piatti.
-          </p>
-        </div>
-      </article>
-    </div>
-
-    <article class="pr-catalog card--ornate">
-      <div class="pr-catalog__copy">
+    <!-- ===== NDUJA ===== -->
+    <article class="pr-feature" id="nduja">
+      <div class="pr-feature__art">
+        <image-slot id="pr-nduja" shape="rect" src="img/prodotti/nduja.png" placeholder="'Nduja di Bocchigliero — morbida e spalmabile"></image-slot>
+      </div>
+      <div class="pr-feature__copy">
         <h2>'Nduja di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
+        <p class="pr-desc">
           Salume spalmabile dal carattere deciso che conquista al primo
           assaggio. Cremosa, saporita e piacevolmente piccante, racchiude
           il gusto della tradizione calabrese.
@@ -193,41 +151,14 @@
       </div>
     </article>
 
-    <div class="pr-feature-row">
-      <article class="pr-feature pr-feature--flip">
-        <div class="pr-feature__art">
-          <image-slot id="pr-capocollo" shape="rect" src="img/prodotti/capocollo.png" placeholder="Capocollo di Bocchigliero · pepe nero / pepe rosso"></image-slot>
-          <span class="seal seal--lg">
-            <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="#1e6e3c"/><circle cx="20" cy="20" r="14" fill="#fff8dd"/><text x="20" y="18" text-anchor="middle" font-family="Jost" font-size="5.5" font-weight="600" fill="#1e6e3c">TIPICO</text><text x="20" y="26" text-anchor="middle" font-family="Jost" font-size="4" fill="#1e6e3c">BOCCHIGLIERO</text></svg>
-          </span>
-        </div>
-        <div class="pr-feature__copy">
-          <p class="pr-kicker">Il decano</p>
-          <h2>Capocollo<br/>di Bocchigliero</h2>
-          <p class="pr-desc">
-            Una delle più alte espressioni della salumeria calabrese.
-            Frutto di una sapiente selezione delle migliori carni e di
-            una lavorazione artigianale d'eccellenza. Massaggio lento,
-            insacco in budello naturale, legatura rigorosamente a mano.
-          </p>
-          <ul class="pr-spec">
-            <li><span>Rifinitura</span><em>Pepe nero · Pepe rosso dolce</em></li>
-            <li><span>Stagionatura</span><em>Superiore ai 90 giorni</em></li>
-            <li><span>Microclima</span><em>Cantine naturali della Sila</em></li>
-            <li><span>Codici</span><em>CAP1 · CAP2 · CAP3 · CAP4</em></li>
-          </ul>
-          <p class="pr-use">
-            <em>Eleganza gustativa</em>, ricca, armoniosa e persistente —
-            autentica espressione del territorio di Bocchigliero.
-          </p>
-        </div>
-      </article>
-    </div>
-
-    <article class="pr-catalog card--ornate">
-      <div class="pr-catalog__copy">
+    <!-- ===== CAPOCOLLO ===== -->
+    <article class="pr-feature pr-feature--flip" id="capocollo">
+      <div class="pr-feature__art">
+        <image-slot id="pr-capocollo" shape="rect" src="img/prodotti/capocollo.png" placeholder="Capocollo di Bocchigliero · pepe nero / pepe rosso"></image-slot>
+      </div>
+      <div class="pr-feature__copy">
         <h2>Capocollo di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
+        <p class="pr-desc">
           Le pezzature di carne accuratamente selezionate ed il tipo di
           lavorazione molto accurato permettono di ottenere un prodotto
           eccellente ed unico nella sua specie. La compattezza di ogni pezzo
@@ -266,65 +197,28 @@
       </div>
     </article>
 
-    <!-- ===== LE SOPPRESSATE ===== -->
-    <p class="pr-section-head"><span>Le soppressate</span></p>
+    <!-- ===== SOPPRESSATE ===== -->
+    <p class="pr-section-head pr-section-head--display" id="soppressate"><span>Soppressate di Bocchigliero</span></p>
 
     <div class="pr-trio">
       <article class="pr-card card--ornate">
-        <p class="pr-kicker">Casereccia</p>
-        <h3>Soppressata<br/>al pepe nero</h3>
-        <image-slot id="pr-sop-nera" shape="rect" src="img/prodotti/sopressata-caserecca.png" placeholder="Soppressata casereccia, pepe nero"></image-slot>
-        <p class="pr-card__desc">
-          Ottenuta dal prosciutto di suino arricchito con grasso selezionato,
-          legata a mano in budello naturale. Il pepe nero, dosato con
-          maestria, valorizza il profilo aromatico delle carni.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Stagionatura</span>45–50 giorni</p>
-          <p><span>Codice</span>SOP1</p>
-        </div>
+        <h3>Soppressata Casereccia<br/>di Bocchigliero</h3>
+        <image-slot id="pr-sop-nera" shape="rect" src="img/prodotti/sopressata-caserecca.png" placeholder="Soppressata casereccia"></image-slot>
       </article>
 
       <article class="pr-card card--ornate">
-        <p class="pr-kicker">Pressata</p>
-        <h3>Soppressata<br/>dolce o piccante</h3>
+        <h3>Soppressata Casereccia<br/>dolce o piccante di Bocchigliero</h3>
         <image-slot id="pr-sop-press" shape="rect" src="img/prodotti/soprssata-piccante.png" placeholder="Soppressata casereccia pressata"></image-slot>
-        <p class="pr-card__desc">
-          La pressatura — passaggio che dà il nome a questa specialità —
-          compatta la carne, favorisce una maturazione uniforme e una
-          consistenza equilibrata e raffinata.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Stagionatura</span>~ 45 giorni</p>
-          <p><span>Codici</span>SOP5 · SOP6</p>
-        </div>
       </article>
 
       <article class="pr-card card--ornate">
-        <p class="pr-kicker">Bombata</p>
-        <h3>Soppressata<br/>bombata</h3>
-        <image-slot id="pr-sop-bom" shape="rect" src="img/prodotti/sopressata-bombata.png" placeholder="Soppressata bombata, tondeggiante"></image-slot>
-        <p class="pr-card__desc">
-          Variante non pressata, mantiene la caratteristica forma
-          tondeggiante del budello naturale e una consistenza più
-          morbida e avvolgente — dolce o piccante.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Stagionatura</span>~ 45 giorni</p>
-          <p><span>Codici</span>SOP2 · SOP3</p>
-        </div>
+        <h3>Soppressata rossa<br/>dolce o piccante di Bocchigliero</h3>
+        <image-slot id="pr-sop-bom" shape="rect" src="img/prodotti/sopressata-bombata.png" placeholder="Soppressata rossa"></image-slot>
       </article>
     </div>
 
     <article class="pr-catalog card--ornate">
       <div class="pr-catalog__copy">
-        <h2>Soppressata di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
-          Ottenute con carne di suino di primo taglio selezionata. Gli aromi ed
-          il tipo di stagionatura, ottenuta con il clima particolare della zona,
-          conferiscono ai prodotti un gusto pulito, leggero e genuino, unico
-          nel suo genere.
-        </p>
         <div class="pr-table-wrap">
           <table class="pr-table">
             <thead>
@@ -377,14 +271,68 @@
         </div>
       </div>
     </article>
+          <table class="pr-table">
+            <thead>
+              <tr>
+                <th scope="col">Codice prodotto</th>
+                <th scope="col">Tipologia</th>
+                <th scope="col">Pezzatura</th>
+                <th scope="col">Forma</th>
+                <th scope="col">Tempo di stagionatura</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SOP1</td>
+                <td>Soppressata casereccia di Bocchigliero</td>
+                <td>250 – 350 gr</td>
+                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
+                <td>Oltre 2 mesi</td>
+              </tr>
+              <tr>
+                <td>SOP2</td>
+                <td>Soppressata rossa dolce di Bocchigliero</td>
+                <td>250 – 350 gr</td>
+                <td>Diametro 8–10 cm;<br/>Lunghezza 18–22 cm</td>
+                <td>2 mesi</td>
+              </tr>
+              <tr>
+                <td>SOP3</td>
+                <td>Soppressata rossa piccante di Bocchigliero</td>
+                <td>250 – 350 gr</td>
+                <td>Diametro 8–10 cm;<br/>Lunghezza 18–22 cm</td>
+                <td>2 mesi</td>
+              </tr>
+              <tr>
+                <td>SOP5</td>
+                <td>Soppressata casereccia dolce di Bocchigliero</td>
+                <td>250 – 350 gr</td>
+                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
+                <td>Oltre 2 mesi</td>
+              </tr>
+              <tr>
+                <td>SOP6</td>
+                <td>Soppressata casereccia piccante di Bocchigliero</td>
+                <td>250 – 350 gr</td>
+                <td>Lunghezza 18–25 cm;<br/>Larghezza 10–15 cm</td>
+                <td>Oltre 2 mesi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
 
-    <!-- ===== LE SALSICCE ===== -->
-    <p class="pr-section-head"><span>Le salsicce</span></p>
+    <!-- ===== SALSICCE ===== -->
+    <p class="pr-section-head pr-section-head--display" id="salsicce"><span>Salsicce di Bocchigliero</span></p>
 
-    <article class="pr-catalog card--ornate">
-      <div class="pr-catalog__copy">
+    <article class="pr-feature">
+      <div class="pr-feature__art">
+        <image-slot id="pr-salsiccia" shape="rect" src="img/prodotti/salsiccia-bocchigliero.png" placeholder="Salsiccia di Bocchigliero"></image-slot>
+      </div>
+      <div class="pr-feature__copy">
         <h2>Salsiccia di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
+        <p class="pr-desc">
           È uno dei prodotti più conosciuti ed apprezzati, che racchiude
           l'esperienza secolare della nostra zona. Gli aromi prodotti in loco
           contribuiscono ad ottenere un sapore tipicamente mediterraneo.
@@ -435,74 +383,50 @@
       </div>
     </article>
 
-    <!-- ===== I TAGLI NOBILI ===== -->
-    <p class="pr-section-head"><span>I tagli nobili</span></p>
-
-    <div class="pr-quad">
-      <article class="pr-card pr-card--tall card--ornate">
-        <p class="pr-kicker">Il leggero</p>
-        <h3>Filetto<br/>di Bocchigliero</h3>
+    <!-- ===== FILETTO ===== -->
+    <article class="pr-feature" id="filetto">
+      <div class="pr-feature__art">
         <image-slot id="pr-filetto" shape="rect" src="img/prodotti/filetto.png" placeholder="Filetto, parte nobile del suino"></image-slot>
-        <p class="pr-card__desc">
+      </div>
+      <div class="pr-feature__copy">
+        <h2>Filetto di Bocchigliero</h2>
+        <p class="pr-desc">
           La parte più nobile e pregiata del suino. Struttura compatta,
           delicatezza della consistenza, ridotto contenuto di grassi.
         </p>
-        <div class="pr-card__foot">
-          <p><span>Rifinitura</span>Pepe nero · Pepe rosso</p>
-          <p><span>Codici</span>FLN1 · FLN2</p>
+        <div class="pr-table-wrap">
+          <table class="pr-table">
+            <thead>
+              <tr>
+                <th scope="col">Codice prodotto</th>
+                <th scope="col">Tipologia</th>
+                <th scope="col">Pezzatura</th>
+                <th scope="col">Forma</th>
+                <th scope="col">Tempo di stagionatura</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>FLT1</td>
+                <td>Filetto stagionato di Bocchigliero</td>
+                <td>2,50 – 3,50 Kg</td>
+                <td>Lunghezza 35–45 cm;<br/>Diametro 8–12 cm</td>
+                <td>Oltre 55 giorni</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="pr-card pr-card--tall card--ornate">
-        <p class="pr-kicker">La classica</p>
-        <h3>Pancetta tesa<br/>di Bocchigliero</h3>
+    <!-- ===== PANCETTA ===== -->
+    <article class="pr-feature pr-feature--flip" id="pancetta">
+      <div class="pr-feature__art">
         <image-slot id="pr-pancetta" shape="rect" src="img/prodotti/pancetta-tesa.png" placeholder="Pancetta tesa, legata a mano"></image-slot>
-        <p class="pr-card__desc">
-          Salatura precisa, massaggio lento, legatura a mano.
-          Stagionatura nell'aria pura della Sila — profondità aromatica
-          e qualità organolettica di assoluto pregio.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Rifinitura</span>Pepe nero · Pepe rosso</p>
-          <p><span>Codici</span>PTE1 · PTE2 · PTE3 · PTE4</p>
-        </div>
-      </article>
-
-      <article class="pr-card pr-card--tall card--ornate">
-        <p class="pr-kicker">Antico gusto</p>
-        <h3>Salame<br/>Getra</h3>
-        <image-slot id="pr-salame" shape="rect" src="img/prodotti/salame-getra.png" placeholder="Salame Getra, ricetta del fondatore"></image-slot>
-        <p class="pr-card__desc">
-          La ricetta ideata da Lino Parrilla per valorizzare i sapori
-          più autentici della tradizione bocchiglierese. Senza coloranti,
-          con delicate note di aglio e pepe nero.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Servire</span>A fette, con pane casereccio</p>
-          <p><span>Codice</span>SGV1</p>
-        </div>
-      </article>
-
-      <article class="pr-card pr-card--tall card--ornate">
-        <p class="pr-kicker">Tradizione</p>
-        <h3>Guanciale</h3>
-        <image-slot id="pr-guanciale" shape="rect" src="img/prodotti/guanciale.png" placeholder="Guanciale, dalla guancia del suino"></image-slot>
-        <p class="pr-card__desc">
-          Dalla guancia del suino — taglio pregiato apprezzato per
-          l'equilibrio tra morbidezza del grasso e delicate venature
-          magre. Gusto intenso e persistente, consistenza vellutata.
-        </p>
-        <div class="pr-card__foot">
-          <p><span>Lavorazione</span>Aromi selezionati</p>
-          <p><span>Codice</span>GNC1</p>
-        </div>
-      </article>
-    </div>
-
-    <article class="pr-catalog card--ornate">
-      <div class="pr-catalog__copy">
+      </div>
+      <div class="pr-feature__copy">
         <h2>Pancetta tesa di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
+        <p class="pr-desc">
           Ottenuta con il sottocostato del suino, molto magra, con aromi
           particolari che danno al prodotto un sapore gradevole.
         </p>
@@ -538,10 +462,14 @@
       </div>
     </article>
 
-    <article class="pr-catalog card--ornate">
-      <div class="pr-catalog__copy">
+    <!-- ===== SALAME ===== -->
+    <article class="pr-feature" id="salame">
+      <div class="pr-feature__art">
+        <image-slot id="pr-salame" shape="rect" src="img/prodotti/salame-getra.png" placeholder="Salame Getra di Bocchigliero"></image-slot>
+      </div>
+      <div class="pr-feature__copy">
         <h2>Salame Getra di Bocchigliero</h2>
-        <p class="pr-catalog__desc">
+        <p class="pr-desc">
           Il prodotto è caratterizzato da un sapore e da un aspetto che fa
           ricordare i prodotti di un tempo, genuini e molto gradevoli da
           gustare.
@@ -571,43 +499,43 @@
       </div>
     </article>
 
-  </div>
-</section>
+    <!-- ===== GUANCIALE ===== -->
+    <article class="pr-feature pr-feature--flip" id="guanciale">
+      <div class="pr-feature__art">
+        <image-slot id="pr-guanciale" shape="rect" src="img/prodotti/guanciale.png" placeholder="Guanciale di Bocchigliero"></image-slot>
+      </div>
+      <div class="pr-feature__copy">
+        <h2>Guanciale di Bocchigliero</h2>
+        <p class="pr-desc">
+          Dalla guancia del suino — taglio pregiato apprezzato per
+          l'equilibrio tra morbidezza del grasso e delicate venature
+          magre. Gusto intenso e persistente, consistenza vellutata.
+        </p>
+        <div class="pr-table-wrap">
+          <table class="pr-table">
+            <thead>
+              <tr>
+                <th scope="col">Codice prodotto</th>
+                <th scope="col">Tipologia</th>
+                <th scope="col">Pezzatura</th>
+                <th scope="col">Forma</th>
+                <th scope="col">Tempo di stagionatura</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GNC1</td>
+                <td>Guanciale di Bocchigliero</td>
+                <td>1 – 2 Kg</td>
+                <td>Lunghezza 30–40 cm;<br/>Diametro 15–25 cm</td>
+                <td>Oltre 60 giorni</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
 
-<!-- ========== VALUES STRIP ========== -->
-<section class="strip">
-  <div class="strip__inner">
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <circle cx="24" cy="24" r="16"/>
-        <circle cx="24" cy="24" r="11"/>
-        <text x="24" y="22" text-anchor="middle" font-family="Cormorant Garamond" font-size="9" font-weight="600" fill="currentColor" stroke="none">+25</text>
-        <text x="24" y="30" text-anchor="middle" font-family="Jost" font-size="4.5" letter-spacing="1" fill="currentColor" stroke="none">ANNI</text>
-      </svg>
-      <p>Oltre 25 anni<br/>di tradizione</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M16 14 Q 24 4, 32 14 Q 36 22, 30 30 Q 24 38, 18 30 Q 12 22, 16 14 Z"/>
-        <path d="M24 12 V 30" />
-      </svg>
-      <p>Senza glutine<br/>e senza lattosio</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M24 8 C 14 16, 12 28, 24 40 C 36 28, 34 16, 24 8 Z"/>
-        <path d="M24 14 V 36"/>
-      </svg>
-      <p>Senza coloranti<br/>né conservanti</p>
-    </div>
-    <div class="strip__item">
-      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.1">
-        <path d="M8 36 L 24 14 L 40 36 Z"/>
-        <path d="M14 36 V 30 H 20 V 36"/>
-        <path d="M28 30 H 34 V 36"/>
-      </svg>
-      <p>Stagionatura naturale<br/>nelle cantine di Sila</p>
-    </div>
   </div>
 </section>
 
@@ -631,8 +559,8 @@
     <p class="eyebrow eyebrow--gold">Hai un'esigenza particolare?</p>
     <h2>Scrivici, ti rispondiamo<br/><em>entro 24 ore.</em></h2>
     <p class="cta-band__lead">
-      Per informazioni su prodotti, ordini di quantità o per organizzare
-      una visita al salumificio, siamo a tua disposizione.
+      Per informazioni su prodotti e ordini di quantità, siamo a tua
+      disposizione.
     </p>
     <div class="cta-band__ctas">
       <a href="/contatti" class="btn btn--cream">Contattaci</a>
@@ -643,7 +571,7 @@
 
 </main>
 
-<!-- ========== FOOTER (reused) ========== -->
+<!-- ========== FOOTER ========== -->
 <footer class="site-footer">
   <div class="footer-grid">
     <div>
@@ -674,48 +602,17 @@
       <ul>
         <li><a href="/chi-siamo">La storia</a></li>
         <li><a href="/prodotti">I salumi</a></li>
-        <li><a href="/contatti">Vieni a trovarci</a></li>
+        <li><a href="/contatti">Acquista i nostri prodotti</a></li>
         <li><a href="/contatti">Domande frequenti</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Newsletter</h4>
-      <p>Iscriviti per ricevere storie, novità e ricette dalla Sila.</p>
-      <form class="newsletter" onsubmit="event.preventDefault();">
-        <input type="email" placeholder="La tua email" />
-        <button type="submit" aria-label="Iscriviti">
-          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M0 7h20m0 0L15 2m5 5l-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-        </button>
-      </form>
-      <div class="socials">
+      <h4>Seguici</h4>
+      <div class="socials" style="margin-top: 0;">
         <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M8 14V8h2l.3-2.4H8V4c0-.7.2-1.2 1.2-1.2H10.4V.6C10.2.6 9.5.5 8.7.5c-1.7 0-2.9 1-2.9 3v2H3.6V8h2.2v6H8z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1.5" y="1.5" width="11" height="11" rx="3"/><circle cx="7" cy="7" r="2.8"/><circle cx="10.4" cy="3.6" r="0.6" fill="currentColor"/></svg></a>
-        <a href="https://wa.me/393452689712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7z"/></svg></a>
+        <a href="https://wa.me/393452689712" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><path d="M7 0a7 7 0 00-6 10.5L0 14l3.6-1A7 7 0 107 0zm0 12.7a5.7 5.7 0 01-3-.8l-.2-.1-2.1.5.6-2-.2-.2A5.7 5.7 0 117 12.7zm3.3-4.3l-.8-.4c-.2-.1-.4-.2-.5 0-.2.2-.6.7-.7.8 0 .1-.1.1-.3 0-.6-.3-1.1-.6-1.5-1.3-.1-.2 0-.3.1-.4 0-.1.2-.3.3-.4 0-.1 0-.2.1-.3 0-.1 0-.2 0-.3l-.5-1.2c-.2-.3-.3-.3-.4-.3h-.4c-.1 0-.3 0-.5.2-.2.2-.7.7-.7 1.6 0 1 .7 1.9.8 2 .1.2 1.4 2.2 3.4 3 1.6.6 1.9.5 2.3.5.3 0 1-.4 1.2-.8.1-.4.1-.8.1-.8 0-.1-.2-.1-.4-.2z"/></svg></a>
       </div>
     </div>
-  </div>
-  <div class="footer-stamp">
-    <svg viewBox="0 0 120 120">
-      <g fill="none" stroke="#c9a366" stroke-width="0.6" opacity="0.65">
-        <circle cx="60" cy="60" r="54"/>
-        <circle cx="60" cy="60" r="50"/>
-        <defs>
-          <path id="fstamp-t" d="M 14 60 A 46 46 0 0 1 106 60" fill="none"/>
-          <path id="fstamp-b" d="M 14 60 A 46 46 0 0 0 106 60" fill="none"/>
-        </defs>
-        <text font-family="Jost" font-size="6.6" letter-spacing="2.8" fill="#c9a366" stroke="none">
-          <textPath href="#fstamp-t" startOffset="50%" text-anchor="middle">GETRA SILA · BOCCHIGLIERO</textPath>
-        </text>
-        <text font-family="Jost" font-size="6" letter-spacing="2" fill="#c9a366" stroke="none">
-          <textPath href="#fstamp-b" startOffset="50%" text-anchor="middle">GENUINITÀ · TRADIZIONE</textPath>
-        </text>
-        <g fill="#c9a366" stroke="none">
-          <path d="M 40 64 L 50 52 L 56 56 L 60 50 L 64 56 L 70 52 L 80 64 L 80 70 L 40 70 Z" opacity="0.85"/>
-          <rect x="58.5" y="42" width="1.6" height="10"/>
-          <polygon points="57.5,42 59.3,38 61.1,42"/>
-        </g>
-      </g>
-    </svg>
   </div>
   <div class="footer-bottom">
     <p>© 2026 Salumificio Getra Sila s.n.c. — P. IVA 01610610782 · Tutti i diritti riservati.</p>
@@ -747,6 +644,43 @@
 }
 .pr-head .lead { max-width: 580px; }
 
+.pr-jump {
+  margin-top: 48px;
+  max-width: 760px;
+}
+.pr-jump__title {
+  font-family: var(--ff-display);
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 500;
+  color: var(--wine);
+  margin: 0 0 20px;
+}
+.pr-jump__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.pr-jump__btn {
+  display: block;
+  text-align: center;
+  background: var(--wine);
+  color: #f6e8c5;
+  font-family: var(--ff-label);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.pr-jump__btn:hover,
+.pr-jump__btn:focus-visible {
+  background: var(--wine-deep);
+  color: #f6e8c5;
+}
+
 .pr-grid {
   background: var(--bg-cream);
   padding: 0 var(--gutter) clamp(80px, 8vw, 120px);
@@ -774,6 +708,11 @@
   letter-spacing: 0.01em;
   text-transform: none;
   color: var(--ink);
+}
+.pr-section-head.pr-section-head--display span {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 500;
+  color: var(--wine);
 }
 
 /* ----- Feature rows (2 large) ----- */
@@ -1046,13 +985,15 @@
 .pr-table tbody tr:last-child td { border-bottom: 0; }
 .pr-table td:first-child {
   font-family: var(--ff-label);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
   color: var(--wine);
   white-space: nowrap;
 }
 .pr-table td { color: var(--ink-soft); line-height: 1.5; }
+.pr-feature__copy .pr-table-wrap { width: 100%; }
+.pr-feature__copy .pr-table { min-width: 520px; }
 
 /* ===== CTA band (reused) ===== */
 .cta-band {
@@ -1093,6 +1034,7 @@
   .pr-card__foot p { grid-template-columns: 1fr; gap: 2px; }
 
   .pr-trio, .pr-duo { grid-template-columns: 1fr; gap: 16px; }
+  .pr-jump__grid { grid-template-columns: 1fr; }
   .pr-table { min-width: 560px; }
   .pr-quad { grid-template-columns: 1fr 1fr; gap: 16px; }
   .pr-card { padding: 20px 18px 16px; }
